@@ -1,6 +1,3 @@
-# data-science-portfolio
-Portfolio of data science projects including data analysis, modeling, and insights.
-
 # Predictive Bank Marketing Analysis
 
 ## Overview
@@ -11,7 +8,7 @@ This project analyzes customer behavior from a real-world bank marketing campaig
 ## Dataset
 - Source: UCI Bank Marketing Dataset
 - 11,162 observations, 17 features
-- Includes demographic, financial, and campaign interaction data
+- Includes demographic, financial, and campaign interactiorn data
 
 ---
 
