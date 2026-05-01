@@ -6,7 +6,7 @@ Currently Studying Data Science, Philosophy, and Business Law, at University of 
 
 -----------------------------------------------------------------
 
-## Featured Project 
+## Featured Project's
 
 ### Predictive Bank Marketing Analysis
 https://github.com/tanneryochum/data-science-portfolio
@@ -33,6 +33,15 @@ https://github.com/tanneryochum/data-science-portfolio/tree/main/king-county-hou
 - Identified key drivers of property value through EDA and correlation analysis
 - Evaluated model performance using RMSE and R² metrics
 - Translated findings into real estate pricing insights
+
+----------------
+
+
+
+
+
+
+
 
 
 
