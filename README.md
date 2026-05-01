@@ -1,34 +1,48 @@
-Tanner Yochum - Data Science Portfolio 
+## Tanner Yochum - Data Science Portfolio 
 
 Data Science Student focused on building real-world projects that combine data analysis, machine learnnig, and business insight.
 
 Currently Studying Data Science, Philosophy, and Business Law, at University of St. Thomas, with a strong interest in applying analytical thinking to real world decision-making.
 
+-----------------------------------------------------------------
+
+## Featured Project 
+
+### Predictive Bank Marketing Analysis
+https://github.com/tanneryochum/data-science-portfolio
 
 
+- Built a classification model (Logistic Regression, ~81% accuracy) to predict customer term deposit subscriptions using real-world banking data (11K+ records)
 
+- Identified key drivers of conversion, including account balance, previous campaign success, and contact strategy
 
-Project: 
+- Analyzed customer segments to uncover behavioral patterns across job categories
 
-- Predictive Bank Marketing Analysis
-Built classification model to predict term deposit subscriptions
-Achieved ~81% accuracy using Logistic Regression
-Identified key drivers of conversion (previous success, balance, contact strategy)
-Delivered actionable insights to improve campaign efficiency
+- Developed data visualizations to communicate trends clearly
 
-**Load** Project
+- Translated findings into actionable business recommendations to improve marketing targeting and campaign efficiency
 
-Tools & Skills 
+---------------------------------------------------------------------
 
-Python (Pandas, NumPy, Scikit-learn)
-Data Cleaning & EDA
-Machine Learning (Classification)
-Data Visualization (Matplotlib, Seaborn)
-Business Insight & Interpretation
+## Skills 
+- Programming & Data: Python (Pandas, NumPy), Data Cleaning, Exploratory Data Analysis (EDA) R Studio
 
+- Machine Learning: Scikit-learn, Classification Models (Logistic Regression)
 
-Contact: 
+- Visualization: Matplotlib, Seaborn
 
-LinkedIn- 
+- Tools: GitHub, VS Code, Jupyter Notebook
 
-Email- 
+- Business oriented mindset, with a strong focus towards uncovering strategic competetive advantages. 
+----------------------------------------------------------------------
+
+### Contact
+
+Email: yoch4478@stthomas.edu
+
+Phone (Cell): 507-838-5227
+
+LinkedIn: https://linkedin.com/in/tanner-yochum-197b86180/
+
+GitHub: https://github.com/tanneryochum/data-science-portfolio
+
