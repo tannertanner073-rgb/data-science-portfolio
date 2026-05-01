@@ -22,10 +22,10 @@ https://github.com/tanneryochum/data-science-portfolio
 
 - Translated findings into actionable business recommendations to improve marketing targeting and campaign efficiency
 
----------------------------------------------
----
+-----------------------------------------
 
-### 🏠 King County House Price Prediction
+
+###  King County House Price Prediction
 https://github.com/tanneryochum/data-science-portfolio/tree/main/king-county-housing-price-prediction
 
 - Built a regression model (Linear Regression, R² ~0.65) to predict housing prices
@@ -36,14 +36,14 @@ https://github.com/tanneryochum/data-science-portfolio/tree/main/king-county-hou
 
 ----------------
 
+###  Global Education Clustering (PISA 2022)
+https://github.com/tanneryochum/data-science-portfolio/tree/main/pisa-global-education-clustering
 
-
-
-
-
-
-
-
+- Applied K-Means clustering to group ~80 countries based on academic performance and socioeconomic indicators
+- Determined optimal cluster count using the Elbow Method
+- Identified clear patterns linking education outcomes with access to technology and economic conditions
+- Visualized clusters and feature relationships using scatter plots and heatmaps
+- Translated findings into real-world insights on global education inequality
 
 ------------------------
 
