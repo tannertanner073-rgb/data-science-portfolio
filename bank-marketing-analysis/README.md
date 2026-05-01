@@ -1,56 +1,74 @@
 # Predictive Bank Marketing Analysis
 
-## Overview
-This project analyzes customer behavior from a real-world bank marketing campaign to predict term deposit subscriptions and identify key drivers of conversion.
+## Problem
+
+Banks run large marketing campaigns, but most customer contacts do not convert.
+The goal of this project is to identify **which customers are most likely to subscribe** to a term deposit and uncover **key drivers of conversion**.
 
 ---
 
-## Dataset
-- Source: UCI Bank Marketing Dataset
-- 11,162 observations, 17 features
-- Includes demographic, financial, and campaign interactiorn data
+##  Key Insights
+
+* Customers with **higher account balances** show significantly higher conversion rates
+* **Previous campaign success** is the strongest predictor of subscription
+* Conversion varies across **job categories**, revealing segmentation opportunities
+* Campaign timing (month) impacts effectiveness
 
 ---
 
-## Key Findings
-- Previous campaign success strongly increases subscription likelihood
-- Higher account balance is associated with higher conversion
-- Excessive outreach reduces effectiveness
-- Timing (month) significantly impacts customer behavior
+##  Visual Evidence
+
+### Subscription Distribution
+
+![Subscription Distribution](visuals/target_distribution.png)
+
+The dataset is relatively balanced, meaning prediction is not biased toward one class.
 
 ---
 
-## Model
-- Logistic Regression (baseline, interpretable model)
-- Accuracy: ~81%
+### Subscription Rate by Job
+
+![Subscription Rate by Job](visuals/job_conversion.png)
+
+Conversion rates differ across job categories, indicating behavioral segmentation opportunities.
 
 ---
 
-## Feature Insights
-- Strong positive drivers: duration*, previous success, certain months
-- Negative drivers: high contact frequency, loan/housing indicators
+### Balance vs Subscription
 
-\*Note: duration is not usable in real-world prediction (data leakage)
+![Balance vs Subscription](visuals/balancevssubscription.png)
 
----
-
-## Business Value
-- Enables targeted outreach to high-probability customers
-- Reduces wasted marketing spend
-- Improves campaign efficiency
+Customers who subscribe tend to have higher balances, suggesting financial capacity is a key driver.
 
 ---
 
-## Tools
-- Python
-- Pandas, NumPy
-- Seaborn, Matplotlib
-- Scikit-learn
+##  Approach
+
+* Performed exploratory data analysis (EDA) using Python (Pandas, Seaborn)
+* Built a **Logistic Regression model (~81% accuracy)**
+* Identified and interpreted key features driving conversion
+* Translated findings into business-relevant insights
 
 ---
 
-## How to Run
+## Business Impact
 
-1. Install dependencies:
-```bash
+* Enables targeted outreach to high-probability customers
+* Reduces wasted marketing spend
+* Improves campaign efficiency through data-driven decision making
+
+---
+
+##  Tools
+
+Python, Pandas, NumPy, Seaborn, Matplotlib, Scikit-learn
+
+---
+
+##  How to Run
+
+````bash
 pip install pandas numpy matplotlib seaborn scikit-learn
+```
+
+Open the notebook in VS Code or Jupyter and run all cells.
