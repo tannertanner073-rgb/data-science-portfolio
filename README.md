@@ -22,7 +22,21 @@ https://github.com/tanneryochum/data-science-portfolio
 
 - Translated findings into actionable business recommendations to improve marketing targeting and campaign efficiency
 
----------------------------------------------------------------------
+---------------------------------------------
+---
+
+### 🏠 King County House Price Prediction
+https://github.com/tanneryochum/data-science-portfolio/tree/main/king-county-housing-price-prediction
+
+- Built a regression model (Linear Regression, R² ~0.65) to predict housing prices
+- Analyzed relationships between features like square footage, grade, and price
+- Identified key drivers of property value through EDA and correlation analysis
+- Evaluated model performance using RMSE and R² metrics
+- Translated findings into real estate pricing insights
+
+
+
+------------------------
 
 ## Skills 
 - Programming & Data: Python (Pandas, NumPy), Data Cleaning, Exploratory Data Analysis (EDA) R Studio
