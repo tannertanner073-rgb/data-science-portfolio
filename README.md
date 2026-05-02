@@ -46,6 +46,29 @@ https://github.com/tanneryochum/data-science-portfolio/tree/main/pisa-global-edu
 - Translated findings into real-world insights on global education inequality
 
 ------------------------
+### ⚖️ Algorithmic Bias Analysis — COMPAS Case Study
+
+https://github.com/tanneryochum/data-science-portfolio/tree/main/compas-bias-analysis
+
+- Analyzed fairness of COMPAS risk scores across racial groups
+- Performed data cleaning based on ProPublica methodology
+- Compared predicted risk vs actual recidivism outcomes
+- Evaluated false positive and false negative rates across demographics
+- Identified potential bias in error distribution
+
+**Key Insight:** Even when predictive models appear accurate, unequal error rates across groups can lead to systematically unfair outcomes.
+
+
+
+
+
+
+-----------------
+
+
+
+
+
 
 ## Skills 
 - Programming & Data: Python (Pandas, NumPy), Data Cleaning, Exploratory Data Analysis (EDA) R Studio
