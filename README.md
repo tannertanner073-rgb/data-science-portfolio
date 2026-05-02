@@ -46,7 +46,7 @@ https://github.com/tanneryochum/data-science-portfolio/tree/main/pisa-global-edu
 - Translated findings into real-world insights on global education inequality
 
 ------------------------
-### sAlgorithmic Bias Analysis — COMPAS Case Study
+### Algorithmic Bias Analysis — COMPAS Case Study
 
 https://github.com/tanneryochum/data-science-portfolio/tree/main/compas-bias-analysis
 
