@@ -2,7 +2,7 @@ Algorithmic Bias Analysis: COMPAS Recidivism Risk Scores
 
 # ⚖️ Algorithmic Bias Analysis: COMPAS Recidivism Risk Scores
 
-## 📌 Overview
+##  Overview
 
 This project analyzes whether COMPAS risk scores demonstrate bias across demographic groups.
 Using real-world criminal justice data, the goal is to evaluate whether prediction errors are distributed fairly.
@@ -16,18 +16,18 @@ The analysis follows a structured pipeline:
 
 ---
 
-## 🎯 Problem
+##  Problem
 
 COMPAS is a risk assessment tool used to predict the likelihood of reoffending.
 Because these predictions influence high-stakes decisions (e.g., sentencing, parole), it is critical to evaluate whether the model treats individuals fairly.
 
 The key question:
 
-> Do COMPAS risk scores and prediction errors differ across demographic groups?
+ Do COMPAS risk scores and prediction errors differ across demographic groups?
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 * Source: ProPublica COMPAS dataset
 * Size: ~7,000 individuals
@@ -40,7 +40,7 @@ The key question:
 
 ---
 
-## 🧹 Data Cleaning
+##  Data Cleaning
 
 The dataset contains inconsistencies and must be filtered carefully.
 
@@ -55,7 +55,7 @@ A clean dataset of valid observations suitable for fairness analysis.
 
 ---
 
-## 🔍 Exploratory Analysis
+## Exploratory Analysis
 
 * Examined distribution of COMPAS risk scores
 * Compared risk score distributions across racial groups
@@ -66,7 +66,7 @@ Risk scores differ across groups, raising initial concerns about fairness.
 
 ---
 
-## ⚖️ Error Analysis (Core Section)
+##  Error Analysis (Core Section)
 
 Defined:
 
@@ -81,7 +81,7 @@ Findings:
 
 ---
 
-## 🚨 Key Insight
+##  Key Insight
 
 Even when overall model performance appears acceptable, the **distribution of errors is unequal**.
 
@@ -94,7 +94,7 @@ These disparities can lead to **systematically unfair real-world outcomes**.
 
 ---
 
-## 🧾 Conclusion
+## Conclusion
 
 This analysis highlights an important limitation of algorithmic decision systems:
 
@@ -105,7 +105,7 @@ The COMPAS case demonstrates how predictive models can produce unequal impacts, 
 
 ---
 
-## 🛠️ Tools Used
+##  Tools Used
 
 * Python (Pandas, NumPy)
 * Data Visualization (Matplotlib, Seaborn)
@@ -113,7 +113,7 @@ The COMPAS case demonstrates how predictive models can produce unequal impacts, 
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 compas-bias-analysis/
 │
@@ -124,7 +124,8 @@ compas-bias-analysis/
 
 ---
 
-## 🚀 Future Improvements
+
+## Future Improvements
 
 * Add predictive modeling (logistic regression)
 * Evaluate precision/recall across groups
