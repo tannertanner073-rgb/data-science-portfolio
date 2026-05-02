@@ -1,6 +1,6 @@
 Algorithmic Bias Analysis: COMPAS Recidivism Risk Scores
 
-# ⚖️ Algorithmic Bias Analysis: COMPAS Recidivism Risk Scores
+# Algorithmic Bias Analysis: COMPAS Recidivism Risk Scores
 
 ##  Overview
 
