@@ -15,8 +15,8 @@ A real estate pricing strategy project that uses a regression model to identify 
 
 **Key idea:** The goal is not perfect prediction — it is identifying relative mispricing signals worth further investigation.
 
-[View Project Folder](./king-county-undervalued-properties-r)  
-[View Full HTML Analysis](./king-county-undervalued-properties-r/undervalued_property_analysis.html)
+[View Project Folder](./tree/main/king-county-undervalued-properties-r) 
+[View Full HTML Analysis](./blob/main/king-county-undervalued-properties-r/undervalued_property_analysis.html)
 
 ---
 
