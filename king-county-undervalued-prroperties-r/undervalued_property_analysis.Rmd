@@ -1,0 +1,178 @@
+# King County Undervalued Property Analysis
+
+## Problem Statement
+
+This project explores whether a simple pricing model can help identify homes that appear underpriced relative to their estimated market value.
+
+Instead of only asking, “What drives housing prices?”, I wanted to ask a more strategy-focused question:
+
+**Which properties appear underpriced compared to what their features suggest they should be worth?**
+
+The goal is to:
+
+- Build a pricing benchmark model
+- Compare predicted prices against actual sale prices
+- Identify properties with large positive pricing gaps
+- Treat the results as screening signals, not guaranteed investment opportunities
+
+---
+
+
+## Data Loading
+
+**Purpose:** Load the King County housing dataset and confirm that the project can find the file from inside the project folder.
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+library(here)
+
+housing <- read.csv(here("data", "kc_house_data.csv"))
+```
+
+**Code concept:**  
+`library(tidyverse)` loads tools for data analysis and visualization.  
+`library(here)` helps R find files reliably from the project folder.  
+`read.csv()` imports the housing dataset into R as a dataframe called `housing`.
+
+**Insight:**  
+The dataset is now loaded into R and can be used to build a pricing model, compare predicted and actual sale prices, and identify possible mispricing patterns.
+
+---
+
+
+## Pricing Model
+
+**Purpose:** Build a simple baseline model to estimate a home’s expected price based on key observable features.
+
+```{r message=FALSE, warning=FALSE}
+model <- lm(price ~ sqft_living + grade + bathrooms + view + waterfront, data = housing)
+```
+
+**Code concept:**  
+`lm()` builds a linear regression model that estimates price as a combination of selected features.  
+Each variable contributes independently to the predicted value.
+
+**Why these features?**  
+I focused on variables that are:
+- Intuitively important to pricing (size, quality, amenities)
+- Easy to interpret
+- Likely to capture a large portion of price variation
+
+**Insight:**  
+This model is not meant to be perfect — it acts as a **pricing benchmark**.  
+The real value comes from comparing its predictions to actual sale prices.
+
+---
+
+## Identify Undervalued Properties
+
+**Purpose:** Compare predicted prices to actual prices to identify homes that may be underpriced.
+
+```{r}
+# Predict prices
+housing$predicted_price <- predict(model, newdata = housing)
+
+# Calculate pricing gap
+housing$price_difference <- housing$predicted_price - housing$price
+
+# Sort by most undervalued
+underpriced <- housing[order(-housing$price_difference), ]
+```
+
+**Code concept:**  
+- `predict()` generates model-estimated prices  
+- `price_difference` measures mispricing  
+- Sorting highlights the largest positive gaps (predicted > actual)
+
+---
+
+## Top 10 Undervalued Opportunities
+
+```{r}
+top_underpriced <- underpriced[1:10, ]
+
+top_underpriced[, c("price", "predicted_price", "price_difference",
+                    "sqft_living", "grade", "view", "waterfront")]
+```
+
+**Insight:**  
+These properties represent the **largest gaps between estimated value and sale price**.
+
+Common patterns:
+- Larger homes with strong structural features
+- Higher grades or desirable attributes
+- Cases where the market may not have fully priced in these characteristics
+
+**Important:**  
+These are **not guaranteed deals** — they are **signals for further investigation**.
+
+
+---
+
+## Visualization of Mispricing
+
+**Purpose:** Visualize the relationship between predicted and actual prices to better understand model behavior and identify undervalued properties.
+```{r}
+plot(housing$price, housing$predicted_price,
+     xlab = "Actual Price",
+     ylab = "Predicted Price",
+     main = "Actual vs Predicted Prices")
+
+abline(0, 1, col = "red")
+
+```
+
+
+---
+
+## Potentially Overpriced Properties
+
+**Purpose:** Identify properties that may be overvalued relative to model expectations.
+```{r}
+overvalued <- housing[order(housing$price_difference), ]
+
+head(overvalued[, c("price", "predicted_price", "price_difference",
+                    "sqft_living", "grade", "view", "waterfront")])
+
+```
+
+## Strategic Interpretation
+
+**What the Model Reveals:**
+
+The regression model captures key drivers of housing prices such as square footage, grade, and location-related features. With an R² of approximately 0.59, the model explains a meaningful portion of price variation, though not all.
+
+**Undervalued Properties:**
+
+Properties identified with large positive price differences (predicted > actual) may represent potential undervaluation. These properties appear to have characteristics that the market may not have fully priced in.
+
+**Key Insight:**
+
+Undervaluation is not purely random — it often appears in properties where:
+- Strong physical attributes (size, grade) exist
+- But other factors (timing, seller urgency, condition, or missing variables) may have suppressed the sale price
+
+**Important Limitation:**
+
+This model does not capture all real-world factors such as:
+- Interior condition
+- Renovation quality
+- Market timing
+- Buyer/seller negotiation dynamics
+
+Therefore, results should be interpreted as **signals**, not definitive investment opportunities.
+
+**Strategic Use Case:**
+
+This type of model could be used by:
+- Real estate investors to screen opportunities  
+- Agents to identify pricing inefficiencies  
+- Analysts to benchmark listing prices  
+
+### Decision Framing
+
+This model is not designed to identify guaranteed investment opportunities, but rather to prioritize where deeper investigation should be focused. The strongest value comes from narrowing a large market into a smaller set of high-potential candidates.
+ The key value is not predicting price perfectly, but identifying **relative mispricing patterns**.
+
+
+
