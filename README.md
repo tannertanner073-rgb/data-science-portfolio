@@ -1,14 +1,14 @@
-# Tanner Yochum — Data Science Portfolio
+# Tanner Yochum Data Science Portfolio
 
-Data Science student focused on building real-world projects that connect modeling, business strategy, and decision-making.
+Studying Data Science, Business, and Philosophy. Strong focus towards creating purposeful, real-world solutions with Machine Learning Models. I prioritize transparency, structure, and process through interpreting ambiguious/ niche research into understandable, actionable insight.
 
-I use Python, R, machine learning, and data visualization to turn messy data into clear insights.
+Current Analysis: Python, R, machine learning, and data visualization to turn messy data into clear insights.
 
 ---
 
 ## Featured Projects
 
-### 🏠 King County Undervalued Property Analysis
+###  King County Undervalued Property Analysis
 A real estate pricing strategy project that uses a regression model to identify homes that may be mispriced relative to estimated market value.
 
 **Skills shown:** R, RStudio, regression modeling, pricing analysis, business interpretation, data storytelling
@@ -20,7 +20,7 @@ A real estate pricing strategy project that uses a regression model to identify 
 
 ---
 
-### 🏦 Bank Marketing Classification
+###  Bank Marketing Classification
 A machine learning project predicting whether a customer will subscribe to a term deposit using marketing campaign data.
 
 **Skills shown:** Python, pandas, scikit-learn, classification, EDA, model evaluation, business recommendations
@@ -29,7 +29,7 @@ A machine learning project predicting whether a customer will subscribe to a ter
 
 ---
 
-### 🌍 PISA Global Education Clustering
+###  PISA Global Education Clustering
 An unsupervised learning project exploring education system patterns using clustering.
 
 **Skills shown:** Python, clustering, feature analysis, visualization, interpretation
