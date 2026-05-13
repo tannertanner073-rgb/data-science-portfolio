@@ -1,4 +1,4 @@
-# Tanner Yochum Data Science Portfolio
+# Tanner Yochum 
 
 Studying Data Science, Business, and Philosophy. Strong focus towards creating purposeful, real-world solutions with Machine Learning Models. I prioritize transparency, structure, and process through interpreting ambiguious/ niche research into understandable, actionable insight.
 
