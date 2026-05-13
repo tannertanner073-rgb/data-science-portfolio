@@ -6,7 +6,7 @@ Current Analysis: Python, R, machine learning, and data visualization to turn me
 
 ---
 
-## Featured Projects
+## Project Work
 
 ###  King County Undervalued Property Analysis
 A real estate pricing strategy project that uses a regression model to identify homes that may be mispriced relative to estimated market value.
